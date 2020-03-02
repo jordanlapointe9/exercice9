@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "AAAA;;;;;;;;EAQE;AAEF,mCAAmC;AAEnC,iBAAiB;AACjB,cAAc;AACd,eAAe;AACf,aAAa;AACb,cAAc;AACd,kBAAkB;AAClB,kCAAkC;AAClC,eAAe;AACf,yBAAyB;AACzB,cAAc;AAEd,mCAAmC;AOvBnC,AAAA,CAAC,CAAC;EACE,WAAW,EAAE,oBAAoB;CACpC;;APgCD,mCAAmC",
+    "sources": [
+        "scss/style.scss",
+        "scss/_variables.scss",
+        "scss/_mixins.scss",
+        "scss/_extends.scss",
+        "scss/_fonts.scss",
+        "scss/_header.scss",
+        "scss/_navigation.scss",
+        "scss/_defaultSettings.scss",
+        "scss/_footer.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
