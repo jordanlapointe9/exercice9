@@ -3,6 +3,7 @@ Theme Name: Exercice 9 - Child
 Theme URI: 127.0.0.1/tp2-veille
 Description: Child theme of Exercice 9 - Programmation et Veille Technologique
 Author: Jordan Lapointe
+Author URI: jordanlapointe.ca
 Template: tp2-veille
 Version: 1.0
 Text Domain: exercice-9-child
@@ -19,8 +20,93 @@ Text Domain: exercice-9-child
 /** Gutenberg Classes **/
 /** Footer **/
 /*********************************/
+.site-header, .site-branding, .menu, footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.site-branding {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 25%;
+}
+
+.site-branding .custom-logo-link img {
+  max-width: 40px;
+  height: 40px;
+}
+
+.site-branding .site-title {
+  margin-left: 5%;
+}
+
+.site-branding .site-title a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0978C0;
+  font-size: 1.5em;
+}
+
+.menu li {
+  margin: 5%;
+  list-style: none;
+}
+
+.menu li a {
+  color: #111;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+.menu li a:hover {
+  color: #0978C0;
+}
+
 * {
   font-family: 'Roboto', sans-serif;
+}
+
+footer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .site-info {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75%;
+}
+
+footer .site-info a {
+  height: 1%;
+  margin-right: 0.5%;
 }
 
 /*********************************/

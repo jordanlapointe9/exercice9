@@ -15,7 +15,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href='<?php get_home_url() ?>'>Exercice #9</a> &mdash;
+			<a href='<?php get_home_url() ?>'>Exercice #9</a>
 			<p>&mdash; Créé par Jordan Lapointe</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

@@ -1,0 +1,15 @@
+footer {
+    @extend %displayFlexRowCenter;
+    justify-content: space-between;
+
+    .site-info {
+        display: inline-flex;
+        align-items: center;
+        width: 75%;
+
+        a {
+            height: 1%;
+            margin-right: 0.5%;
+        }
+    }
+}

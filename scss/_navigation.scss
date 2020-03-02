@@ -1,0 +1,20 @@
+.menu {
+  @extend %displayFlexRowCenter;
+
+  li {
+    margin: 5%;
+    list-style: none;
+
+    a {
+      color: $black;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      @include transition(color 0.4s);
+
+      &:hover {
+          color: $blue;
+      }
+    }
+  }
+}
