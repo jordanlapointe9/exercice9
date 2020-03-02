@@ -32,7 +32,7 @@ get_header();
 <?php
 
 // Appel du Query : Conférences
-
+echo '<div class="categorie-conferences">';
 echo '<h1>Nos dernières conférences</h1>';
 
 while ( $queryConferences->have_posts() ) {
@@ -47,9 +47,10 @@ while ( $queryConferences->have_posts() ) {
 }
 
 wp_reset_postdata();
+echo '</div>';
 
 // Appel du Query : Nouvelles
-
+echo '<div class="categorie-nouvelles">';
 echo '<h1>Nos dernières nouvelles</h1>';
 
 while ( $queryNouvelles->have_posts() ) {
@@ -64,13 +65,11 @@ while ( $queryNouvelles->have_posts() ) {
 
 wp_reset_postdata();
 
+echo '</div>';
+
 ?>
 
 <?php
-
-$query = new WP_Query();
-extraire_conferences($query);
-
 //Appel du footer
 get_footer();
 ?>

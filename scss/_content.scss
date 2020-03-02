@@ -17,4 +17,25 @@
             }
         }
     }
+
+    .categorie-conferences {
+        @extend %displayFlexColumnCenter;
+        width: 75%;
+
+        .articles-conferences {
+            @extend %displayFlexRowCenter;
+
+            .image-article {
+                width: 200px;
+            }
+    
+            .title-article {
+    
+            }
+    
+            .text-extract {
+    
+            }
+        }
+    }
 }

@@ -20,7 +20,25 @@ Text Domain: exercice-9-child
 /** Gutenberg Classes **/
 /** Footer **/
 /*********************************/
-.site-header, .site-branding, .main-navigation .menu, footer {
+.site-content .categorie-conferences {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-header, .site-branding, .main-navigation .menu, .site-content .categorie-conferences .articles-conferences, footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,6 +140,14 @@ body {
 .site-content .figure-post-thumbnail .post-thumbnail img {
   width: 100%;
   height: 100%;
+}
+
+.site-content .categorie-conferences {
+  width: 75%;
+}
+
+.site-content .categorie-conferences .articles-conferences .image-article {
+  width: 200px;
 }
 
 footer {
