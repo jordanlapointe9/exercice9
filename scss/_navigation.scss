@@ -1,19 +1,27 @@
-.menu {
-  @extend %displayFlexRowCenter;
+.main-navigation {
+  width: 50%;
+  height: auto;
 
-  li {
-    margin: 5%;
-    list-style: none;
+  .menu {
+    @extend %displayFlexRowCenter;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
 
-    a {
-      color: $black;
-      text-decoration: none;
-      text-transform: uppercase;
+    li {
+      margin: 0 5%;
+      list-style: none;
 
-      @include transition(color 0.4s);
+      a {
+        color: $black;
+        text-decoration: none;
+        text-transform: uppercase;
 
-      &:hover {
+        @include transition(color 0.4s);
+
+        &:hover {
           color: $blue;
+        }
       }
     }
   }

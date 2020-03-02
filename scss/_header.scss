@@ -1,12 +1,14 @@
 .site-header {
     @extend %displayFlexRowCenter;
     justify-content: space-between;
+    height: 8vh;
+    margin: 0 2%;
 }
 
 .site-branding {
     @extend %displayFlexRowCenter;
     justify-content: flex-start;
-    width: 25%;
+    width: 50%;
 
     .custom-logo-link {
         img {

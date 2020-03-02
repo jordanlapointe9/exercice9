@@ -20,7 +20,7 @@ Text Domain: exercice-9-child
 /** Gutenberg Classes **/
 /** Footer **/
 /*********************************/
-.site-header, .site-branding, .menu, footer {
+.site-header, .site-branding, .main-navigation .menu, footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,13 +42,15 @@ Text Domain: exercice-9-child
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 8vh;
+  margin: 0 2%;
 }
 
 .site-branding {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 25%;
+  width: 50%;
 }
 
 .site-branding .custom-logo-link img {
@@ -67,12 +69,25 @@ Text Domain: exercice-9-child
   font-size: 1.5em;
 }
 
-.menu li {
-  margin: 5%;
+.main-navigation {
+  width: 50%;
+  height: auto;
+}
+
+.main-navigation .menu {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation .menu li {
+  margin: 0 5%;
   list-style: none;
 }
 
-.menu li a {
+.main-navigation .menu li a {
   color: #111;
   text-decoration: none;
   text-transform: uppercase;
@@ -80,7 +95,7 @@ Text Domain: exercice-9-child
   transition: color 0.4s;
 }
 
-.menu li a:hover {
+.main-navigation .menu li a:hover {
   color: #0978C0;
 }
 
@@ -88,10 +103,33 @@ Text Domain: exercice-9-child
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
+.site-content .figure-post-thumbnail {
+  width: 100vw;
+  height: 50vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.site-content .figure-post-thumbnail .post-thumbnail {
+  position: relative;
+  top: -50vh;
+}
+
+.site-content .figure-post-thumbnail .post-thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
 footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 8vh;
+  border-top: 2px solid #0978C0;
 }
 
 footer .site-info {
@@ -102,11 +140,20 @@ footer .site-info {
       -ms-flex-align: center;
           align-items: center;
   width: 75%;
+  margin: 0 2%;
 }
 
 footer .site-info a {
   height: 1%;
   margin-right: 0.5%;
+  color: #111;
+  text-transform: uppercase;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+footer .site-info a:hover {
+  color: #0978C0;
 }
 
 /*********************************/
