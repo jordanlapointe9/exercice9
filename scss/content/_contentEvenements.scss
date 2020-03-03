@@ -1,19 +1,20 @@
 .container-evenements {
-    width: 90%;
+    width: 90vw;
     border: 2px solid $black;
 
     display: grid;
+    grid-template-columns: repeat(3, 30vw);
     margin: 2%;
 
     .articles-evenements {
         border: 2px solid $blue;
-        width: 25%;
+        width: 29.85vw;
 
         .content-post {
             @extend %displayFlexColumnCenter;
 
             .title-article {
-                margin-bottom: 2%;
+                margin-bottom: 0;
 
                 a {
                   color: $blue;
@@ -28,6 +29,10 @@
             }
 
             .post-date {
+                margin: 2% 0;
+            }
+
+            p {
                 margin-top: 0;
             }
         }

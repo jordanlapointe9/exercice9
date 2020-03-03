@@ -131,20 +131,22 @@ body {
 /** Content Événements **/
 /*********************************/
 .container-evenements {
-  width: 90%;
+  width: 90vw;
   border: 2px solid #111;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (30vw)[3];
+      grid-template-columns: repeat(3, 30vw);
   margin: 2%;
 }
 
 .container-evenements .articles-evenements {
   border: 2px solid #0978C0;
-  width: 25%;
+  width: 29.85vw;
 }
 
 .container-evenements .articles-evenements .content-post .title-article {
-  margin-bottom: 2%;
+  margin-bottom: 0;
 }
 
 .container-evenements .articles-evenements .content-post .title-article a {
@@ -159,6 +161,10 @@ body {
 }
 
 .container-evenements .articles-evenements .content-post .post-date {
+  margin: 2% 0;
+}
+
+.container-evenements .articles-evenements .content-post p {
   margin-top: 0;
 }
 
