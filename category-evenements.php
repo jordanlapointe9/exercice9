@@ -4,15 +4,18 @@
     echo "<h1> Nos événements importants cette année </h1>";
 
     if ( have_posts() ) :
-        while ( have_posts() ) : the_post();
-        echo '
+        echo '<div class="container-evenements">';
+            while ( have_posts() ) : the_post();
+            echo '
             <article class="articles-evenements" style="">
-
-                <h3 class="title-article"><a target=_blank href='.get_the_permalink().'>'.get_the_title().'</a></h3>
-                <h4 class=post-date>'.get_the_date().'</h4>
+                <div class="content-post">
+                    <h3 class="title-article"><a target=_blank href='.get_the_permalink().'>'.substr(get_the_title(), 0, 20).'</a></h3>
+                    <h4 class=post-date>'.get_the_date().'</h4>
+                </div>
             </article>
             ';
-        endwhile;
+            endwhile;
+        echo '</div>';
     endif;
 
     get_footer();

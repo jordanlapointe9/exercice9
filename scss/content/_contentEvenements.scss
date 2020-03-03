@@ -1,0 +1,35 @@
+.container-evenements {
+    width: 90%;
+    border: 2px solid $black;
+
+    display: grid;
+    margin: 2%;
+
+    .articles-evenements {
+        border: 2px solid $blue;
+        width: 25%;
+
+        .content-post {
+            @extend %displayFlexColumnCenter;
+
+            .title-article {
+                margin-bottom: 2%;
+
+                a {
+                  color: $blue;
+                  text-transform: uppercase;
+        
+                  @include transition(color 0.4s);
+        
+                  &:hover {
+                    color: lighten($blue, 20%);
+                  }
+                }
+            }
+
+            .post-date {
+                margin-top: 0;
+            }
+        }
+    }
+}

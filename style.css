@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Exercice 9 - Child
 Theme URI: 127.0.0.1/tp2-veille
@@ -20,7 +21,7 @@ Text Domain: exercice-9-child
 /** Gutenberg Classes **/
 /** Footer **/
 /*********************************/
-.site-content, .site-content .categorie-conferences, .site-content .categorie-nouvelles, .site-content .categorie-nouvelles .categorie-nouvelle-contenu .articles-nouvelles {
+.container-evenements .articles-evenements .content-post, .site-content, .site-content .categorie-conferences, .site-content .categorie-nouvelles, .site-content .categorie-nouvelles .categorie-nouvelle-contenu .articles-nouvelles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,6 +124,42 @@ Text Domain: exercice-9-child
 
 body {
   margin: 0;
+}
+
+/** Imports **/
+/** Content Front Page **/
+/** Content Événements **/
+/*********************************/
+.container-evenements {
+  width: 90%;
+  border: 2px solid #111;
+  display: -ms-grid;
+  display: grid;
+  margin: 2%;
+}
+
+.container-evenements .articles-evenements {
+  border: 2px solid #0978C0;
+  width: 25%;
+}
+
+.container-evenements .articles-evenements .content-post .title-article {
+  margin-bottom: 2%;
+}
+
+.container-evenements .articles-evenements .content-post .title-article a {
+  color: #0978C0;
+  text-transform: uppercase;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+.container-evenements .articles-evenements .content-post .title-article a:hover {
+  color: #39acf6;
+}
+
+.container-evenements .articles-evenements .content-post .post-date {
+  margin-top: 0;
 }
 
 .site-content .figure-post-thumbnail {
