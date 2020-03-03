@@ -6,14 +6,14 @@
 - Elle sera triée selon la date des conférences
 - En ordre ascendant
  */
-function extraire_conferences( $query ) {
+function extraire_evenements( $query ) {
     if ($query->is_category('evenements'))
     {
-       $query->set( 'posts_per_page', 5 );
+       $query->set( 'posts_per_page', -1 );
        $query->set( 'orderby', 'date' );
        $query->set( 'order', 'asc' );
     }
  }
- add_action( 'pre_get_posts', 'extraire_conferences' );
+ add_action( 'pre_get_posts', 'extraire_evenements' );
 
 ?>
